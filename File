@@ -1,0 +1,17 @@
+Of course. Here are the short and crisp bullet points summarizing the Approach, Algorithms, and Tools used in your project.
+Approach
+Hybrid AI System: Utilized a dual-AI strategy, leveraging a creative LLM for itinerary planning and a predictive ML model for precise cost estimation.
+Data-Driven Modeling: Employed a synthetic data generation approach, using the LLM to create a large, structured dataset to overcome the absence of real-world training data.
+User-Centric & Interactive Design: Built the application as an interactive, "user-in-the-loop" system where all AI and optimization tasks are triggered by direct user actions.
+Algorithms
+Large Language Model (LLM): Used Google's Gemini (specifically gemini-1.5-flash) for natural language understanding, itinerary generation, and structured JSON extraction.
+Gradient Boosting Machine (LightGBM): Selected as the primary regression algorithm for its high accuracy and efficiency in predicting numerical cost values from structured, tabular data.
+Automated Hyperparameter Tuning (Optuna): Implemented an optimization algorithm to systematically search for and apply the best-performing settings for the LightGBM model.
+Real-Time Routing (Google Maps API): Leveraged Google's Directions API, which uses complex graph and traffic analysis algorithms to find the most efficient, traffic-aware routes.
+Tools
+Streamlit: The core framework for building and deploying the entire interactive user interface.
+Pandas: Used for all data manipulation, cleaning, feature engineering, and preparation of the training dataset.
+Scikit-learn: Provided the essential machine learning pipeline tools, including train_test_split and MultiOutputRegressor.
+Joblib: Used for serializing and saving the trained machine learning model to disk for later use in production.
+Plotly Express: The primary library for creating the interactive charts and visualizations for the Admin Analytics Dashboard.
+Jinja2: The templating engine used to dynamically generate the shareable, standalone HTML itinerary files.
